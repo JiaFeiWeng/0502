@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: #FFA1A3;
+    transition: all 1000ms ease 0s;
+    -webkit-transition: all 1000ms ease 0s;
+    -o-transition: all 1000ms ease 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: #68DCAB;
+    -webkit-transition: all 1000ms ease-in-out 0s;
+    -o-transition: all 1000ms ease-in-out 0s;
+    transition: all 1000ms ease-in-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1:hover {
+    background-color: #95A0E1;
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+	transform: translate(50px,50px);
+	}
+.box2:active {
+    background-color: #51A5AA;
+	transform: rotate(360deg);
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: #B99845;
+    transition: all 1000ms ease-in-out 0s, background-color, all 0s ease 0s;
+    -webkit-transition: all 1000ms ease-in-out 0s, background-color, all 0s ease 0s;
+    -o-transition: all 1000ms ease-in-out 0s, background-color, all 0s ease 0s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: large;
+	}
+.box3:active {
+    all: black;
+    background-color: #9F5737;
+	transform: scaleX(2);
+	}
+</style>
+</head>
+,
+
+<body>
+<div class="box1">位移</div>
+<div class="box2">旋轉</div>
+<div class="box3">縮放</div>
+</body>
+</html>
